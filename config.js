@@ -1,6 +1,7 @@
 const config = {
   businessName: "Greenwich Cleaning",
   email: "hello@greenwichcleaning.com",
+  googleMapsApiKey: "",
   serviceAreas: [
     "Greenwich",
     "Old Greenwich",
