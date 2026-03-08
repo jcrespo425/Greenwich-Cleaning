@@ -1,0 +1,15 @@
+{
+  "name": "Greenwich Cleaning",
+  "short_name": "Greenwich Cleaning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfaf7",
+  "theme_color": "#102235",
+  "icons": [
+    {
+      "src": "/assets/brand-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
