@@ -1298,9 +1298,11 @@ p {
 
   .photo-mosaic {
     min-height: auto;
+    grid-template-rows: auto;
   }
 
   .mosaic-card.primary {
+    grid-row: auto;
     min-height: 420px;
   }
 
@@ -1308,10 +1310,15 @@ p {
     min-height: 240px;
   }
 
+  .hero-visual {
+    display: grid;
+    gap: 1rem;
+  }
+
   .floating-note {
     position: static;
     max-width: none;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .contact-showcase-panel {
