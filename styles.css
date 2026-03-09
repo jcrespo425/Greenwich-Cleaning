@@ -1231,6 +1231,34 @@ p {
     display: none;
   }
 
+  .header-inner {
+    gap: 0.75rem;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 0.75rem;
+  }
+
+  .brand img {
+    width: 2.45rem;
+    height: 2.45rem;
+    flex: 0 0 auto;
+  }
+
+  .brand-copy {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
   .nav-toggle {
     display: inline-flex;
     align-items: center;
@@ -1272,6 +1300,17 @@ p {
     font-size: clamp(3rem, 14vw, 4.6rem);
   }
 
+  .hero-actions,
+  .cta-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .btn,
+  .cta-actions .btn {
+    width: 100%;
+  }
+
   .photo-mosaic,
   .hero-summary,
   .trust-row,
@@ -1297,22 +1336,29 @@ p {
   }
 
   .photo-mosaic {
+    display: flex;
+    flex-direction: column;
     min-height: auto;
-    grid-template-rows: auto;
+    gap: 0.8rem;
   }
 
   .mosaic-card.primary {
-    grid-row: auto;
-    min-height: 420px;
+    min-height: 340px;
   }
 
   .mosaic-card:not(.primary) {
-    min-height: 240px;
+    min-height: 220px;
   }
 
   .hero-visual {
     display: grid;
     gap: 1rem;
+  }
+
+  .photo-label {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
   }
 
   .floating-note {
