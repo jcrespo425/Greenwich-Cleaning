@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://greenwichcleaning.com/sitemap.xml
+Sitemap: https://www.greenwichcleaning.com/sitemap.xml
