@@ -1343,16 +1343,15 @@ p {
   }
 
   .mosaic-card.primary {
-    min-height: 340px;
+    min-height: 280px;
   }
 
   .mosaic-card:not(.primary) {
-    min-height: 220px;
+    display: none;
   }
 
   .hero-visual {
-    display: grid;
-    gap: 1rem;
+    display: block;
   }
 
   .photo-label {
@@ -1362,9 +1361,7 @@ p {
   }
 
   .floating-note {
-    position: static;
-    max-width: none;
-    margin-top: 0;
+    display: none;
   }
 
   .contact-showcase-panel {
