@@ -221,11 +221,9 @@
                 Start with the service, property address, and basic size or care details. If more information is needed, that can be
                 confirmed in the reply instead of making the first inquiry feel long.
               </p>
-              <form class="form-grid" name="quote-request" method="POST" action="https://formsubmit.co/hello@greenwichcleaning.com" data-quote-form>
-                <input type="hidden" name="_subject" value="New Greenwich Cleaning Inquiry" />
-                <input type="hidden" name="_next" value="https://www.greenwichcleaning.com/thank-you/" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden />
+              <form class="form-grid" name="quote-request" method="POST" action="https://formspree.io/f/mkoqvgzb" data-quote-form data-success-redirect="/thank-you/">
+                <input type="hidden" name="subject" value="New Greenwich Cleaning Inquiry" />
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden />
                 <div class="field">
                   <label for="name">Name</label>
                   <input id="name" name="name" type="text" placeholder="Your name" required />

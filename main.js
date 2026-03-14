@@ -140,4 +140,38 @@ quoteForms.forEach((form) => {
   form.querySelector("[name='service']")?.addEventListener("change", () => {
     updateQuoteForm(form);
   });
+
+  form.addEventListener("submit", async (event) => {
+    const action = form.getAttribute("action") || "";
+    const successRedirect = form.dataset.successRedirect;
+
+    if (!action.includes("formspree.io")) {
+      return;
+    }
+
+    event.preventDefault();
+
+    try {
+      const response = await fetch(action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      if (successRedirect) {
+        window.location.assign(successRedirect);
+        return;
+      }
+
+      form.reset();
+    } catch (error) {
+      window.alert("There was a problem sending your request. Please try again.");
+    }
+  });
 });
