@@ -10,7 +10,8 @@ export default defineConfig({
         about: resolve(__dirname, "about", "index.html"),
         serviceArea: resolve(__dirname, "service-area", "index.html"),
         contact: resolve(__dirname, "contact", "index.html"),
-        thankYou: resolve(__dirname, "thank-you", "index.html")
+        thankYou: resolve(__dirname, "thank-you", "index.html"),
+        templatesPreview: resolve(__dirname, "templates-preview", "index.html")
       }
     }
   },

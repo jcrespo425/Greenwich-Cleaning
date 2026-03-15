@@ -1114,6 +1114,130 @@ p {
   color: var(--navy);
 }
 
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.template-card {
+  padding: 1.45rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(245, 241, 234, 0.84));
+  box-shadow: var(--shadow);
+}
+
+.template-card h3 {
+  margin: 0 0 0.4rem;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.template-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.9rem 0 1rem;
+}
+
+.template-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(16, 34, 53, 0.08);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.template-chip.recommended {
+  background: rgba(183, 135, 82, 0.18);
+  color: #7b552f;
+}
+
+.template-block {
+  margin-top: 1rem;
+  padding: 1rem 1.05rem;
+  border-radius: 20px;
+  background: rgba(16, 34, 53, 0.04);
+  border: 1px solid rgba(16, 34, 53, 0.08);
+}
+
+.template-block strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--navy-ink);
+}
+
+.template-copy {
+  white-space: pre-line;
+  color: var(--slate-deep);
+  line-height: 1.72;
+}
+
+.template-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.template-email {
+  margin-top: 1rem;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(16, 34, 53, 0.1);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.template-email-bar {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.95rem 1.05rem;
+  background: linear-gradient(180deg, rgba(16, 34, 53, 0.08), rgba(16, 34, 53, 0.03));
+  border-bottom: 1px solid rgba(16, 34, 53, 0.08);
+}
+
+.template-email-bar span {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate);
+  font-weight: 800;
+}
+
+.template-email-bar strong {
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.template-email-body {
+  display: grid;
+  gap: 1rem;
+  padding: 1.1rem 1.05rem 1.15rem;
+}
+
+.template-email-body p {
+  margin: 0;
+  color: var(--slate-deep);
+  line-height: 1.72;
+}
+
+.template-notes {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.template-notes p {
+  font-size: 0.94rem;
+}
+
 .small-note {
   font-size: 0.92rem;
   color: var(--slate);
@@ -1214,6 +1338,10 @@ p {
   .feature-list,
   .benefit-points {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .template-summary {
+    grid-template-columns: 1fr;
   }
 
   .proof-intro {
@@ -1328,6 +1456,10 @@ p {
   .form-grid,
   .feature-list,
   .benefit-points {
+    grid-template-columns: 1fr;
+  }
+
+  .template-summary {
     grid-template-columns: 1fr;
   }
 
