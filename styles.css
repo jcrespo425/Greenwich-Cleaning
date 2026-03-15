@@ -618,9 +618,10 @@ p {
 }
 
 .floating-note.bottom {
-  right: -0.85rem;
-  bottom: -1.3rem;
-  max-width: 232px;
+  position: static;
+  margin-top: 1rem;
+  margin-left: auto;
+  max-width: 260px;
 }
 
 .section {
